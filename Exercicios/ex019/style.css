@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/*
+Tudo que em HTML é id, em CSS é #
+Tudo que em HTML é class em CSS é .
+
+ID deve ser único e Class múltiplo
+Não de nome a suas classes e dis de acordo com a forma e sim a função
+*/
+body{
+    background-color: rgb(209, 255, 240);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(1, 136, 91);
+}
+
+h1#principal{
+    /*também é possível fazer sem colocar o elemento. Ex: "#princial" também funciona*/
+    text-align: center;
+    background-color: blueviolet;
+    color: aliceblue;
+    /*Id herda os elmentos mas sobrepoe, como foi com o color*/
+}
+
+h2{
+    color: rgb(15, 77, 158);
+}
+
+.basico{
+    color: rgb(139, 145, 59);
+
+}
+.intermediario{
+    color: rgb(145, 59, 59);
+}
+.avancado{
+    color: rgb(72, 59, 145);
+    
+}
+
+.destaque{
+    background-color: rgba(243, 243, 83, 0.651);
+    
+}
+

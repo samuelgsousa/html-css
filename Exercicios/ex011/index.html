@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+
+        <!--Usando "max width" é necessário colocar os tamanhos do menor ao maior"-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/cinnamon-girl.mp3" type="audio/mpeg">
+
+        <source src="midia/cinnamon-girl.mp3" type="audio/ogg">
+
+        <source src="midia/cinnamon-girl.mp3" type="audio/wav">
+
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/cinnamon-girl.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+
+        <!--A ordem faz diferença, pois o navegador vai tentar carregar o primeiro tipo, se não conseguir vai tentar o segundo, e assim por diante-->
+
+        <!--Metadata serve para que a página carregue sem carregar o áudio. Ele só será carregado ao dar play. As opções auto e none carregam o áudio automaticamente, porém, pode deixar seu site mais lento-->
+
+        <!--Autoplay controls serve para que sejam exibidos os controles-->
+
+        <!--Loop serve para que o áudio se inicie de novo depois de terminar-->
+    </audio>
+
+</body>
+</html>
